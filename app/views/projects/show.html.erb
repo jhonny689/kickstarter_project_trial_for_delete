@@ -1,0 +1,6 @@
+<h1>Show Project</h1>
+<div>
+    <h2><%= @project.title %></h2>
+    <h4><%= @project.description %></h4>
+</div>
+<%= link_to "Delete", @project, method: :delete, confirm: 'Are you sure?' %>

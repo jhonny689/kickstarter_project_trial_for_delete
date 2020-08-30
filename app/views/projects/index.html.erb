@@ -1,0 +1,7 @@
+<h1>All Projects</h1>
+<DIV>
+    <% @projects.each do |project| %>
+       <h2> <%= link_to project.title, project_path(project)%></h2>
+       <h4> <%= project.description %></h4>
+    <% end %>
+</DIV>
